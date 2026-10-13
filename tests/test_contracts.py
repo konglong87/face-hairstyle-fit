@@ -22,6 +22,7 @@ class ContractTests(unittest.TestCase):
 
     def test_starter_catalog(self):
         self.assertEqual(5, sum(s["kind"] == "family" for s in self.catalog.styles.values()))
+        self.assertEqual(3, sum(s["kind"] == "expression" for s in self.catalog.styles.values()))
         self.assertEqual(7, len(self.catalog.dimensions))
 
     def test_extension_does_not_need_code_change(self):

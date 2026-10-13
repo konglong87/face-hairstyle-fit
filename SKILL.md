@@ -30,7 +30,7 @@ Respond in their language. You need an image-capable host; scripts do not perfor
    Don't infer skin undertone/seasonal color type under uncertain light or body proportions from a face crop.
 3. **Suggest directions, not verdicts.** Present one leading family and, where useful, one alternative.
    Explain the evidence, tradeoff and uncertainty. The five starter families are not exclusive identities;
-   Korean/Japanese are styling expressions, never nationality or facial ancestry. Recipe combinations
+   Korean/Japanese/New-Chinese are styling expressions, never nationality, ethnicity or identity. Recipe combinations
    such as 甜酷 are permitted by the catalog. Never invent calibrated probabilities or beauty scores.
    The seven dimensions describe a visible/proposed *look*, not permanent face measurements.
 4. **Integrate preference and feasibility.** Preserve known preferences. Ask only about constraints
