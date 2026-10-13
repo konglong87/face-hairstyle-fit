@@ -1,0 +1,6 @@
+interface:
+  display_name: "Face Hairstyle Fit"
+  short_description: "根据照片探索适合自己的风格，协调发型、可选妆容与穿搭建议"
+  default_prompt: "使用 $face-hairstyle-fit 分析我的照片和偏好，推荐可尝试的风格及发型、妆容、穿搭方案。"
+policy:
+  allow_implicit_invocation: true

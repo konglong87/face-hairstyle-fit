@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "status": "provisional",
+  "summary": "合成结构示例：先试柔和配方，不是个人风格定论。",
+  "images": [
+    {
+      "id": "example-photo",
+      "role": "unknown",
+      "face_count": 1,
+      "target_selected": false,
+      "issues": [
+        "role_unknown",
+        "preferences_missing"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "example-hair",
+      "image_id": "example-photo",
+      "scope": "hair",
+      "description": "示例：当前头发有自然弧度。",
+      "evidence": "这是人工构造的观察，不对应真实人物。",
+      "confidence": "low"
+    }
+  ],
+  "presentation_dimensions": {
+    "linearity": null,
+    "structure": null,
+    "contrast": null,
+    "depth": null,
+    "chroma": null,
+    "ornament": null,
+    "finish": null
+  },
+  "preferences": {
+    "liked_styles": [],
+    "disliked_styles": [],
+    "constraints": []
+  },
+  "recommendations": [
+    {
+      "family_id": "soft",
+      "expression_id": null,
+      "recipe_id": null,
+      "evidence_ids": [
+        "example-hair"
+      ],
+      "rationale": "仅演示如何把可见观察连接到可逆配方。",
+      "tradeoffs": [
+        "不代表最适合，也不代表真实图像分析结果。"
+      ],
+      "plan": {
+        "hair": {
+          "status": "propose",
+          "actions": [
+            "先试自然侧分；理发师沟通：暂不剪短，保留脸周长度。"
+          ],
+          "reason": "结构示例，按用户偏好调整。"
+        },
+        "makeup": {
+          "status": "propose",
+          "actions": [
+            "如愿意化妆，先试柔和唇缘；不化妆可跳过。"
+          ],
+          "reason": "结构示例，按用户偏好调整。"
+        },
+        "outfit": {
+          "status": "propose",
+          "actions": [
+            "只试近脸领口和材质，不推测体型。"
+          ],
+          "reason": "结构示例，按用户偏好调整。"
+        }
+      }
+    }
+  ],
+  "experiments": [
+    {
+      "action": "同光线下比较两种分缝。",
+      "why": "低成本验证偏好。",
+      "cost": "low",
+      "reversible": true
+    }
+  ],
+  "uncertainties": [
+    "照片角色与偏好尚未确认。"
+  ],
+  "questions": [
+    "是否喜欢这个方向，且愿意日常打理？"
+  ],
+  "limitations": [
+    "人工构造示例，非真实人物、模型测试或美学准确性证明。"
+  ]
+}
