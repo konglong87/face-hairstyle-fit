@@ -37,9 +37,9 @@ low / medium / high 表示证据质量，不表示美学准确率。
 ## 分类模型
 
 基础 family：sweet / soft / dignified / cool / polished。
-表达 expression：korean / japanese。这里是造型语言，不推断国籍、族裔。
+表达 expression：korean / japanese / chinese。这里是造型语言，不推断国籍、族裔或身份。
 配方 recipe：sweet-cool / french-soft / chinese-elegant。
-用户界面保留七个入口；内部三种类型不可混成互斥分类。
+用户界面可展示五个基础风格、三个表达方向和三个组合配方；内部三种类型不可混成互斥分类。
 新增风格只增加 catalog 条目，schema 不硬编码风格 ID；引用合法性由 loader 校验。
 
 造型维度：linearity（圆弧→直线），structure（松弛→受控），contrast（低→高），
