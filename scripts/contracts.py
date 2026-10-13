@@ -15,6 +15,7 @@ RECIPE = "recipe"
 READY = "ready"
 NEEDS_INPUT = "needs_input"
 USER_PHOTO = "user_photo"
+UNKNOWN = "unknown"
 REFERENCE_ROLES = frozenset({"reference", "expected_effect"})
 BLOCKING_ISSUES = frozenset({"blur", "occluded", "extreme_pose", "no_face"})
 SKIP = "skip"
