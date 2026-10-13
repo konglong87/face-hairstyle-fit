@@ -18,6 +18,7 @@ USER_PHOTO = "user_photo"
 UNKNOWN = "unknown"
 REFERENCE_ROLES = frozenset({"reference", "expected_effect"})
 BLOCKING_ISSUES = frozenset({"blur", "occluded", "extreme_pose", "no_face"})
+READY_BLOCKING_ISSUES = frozenset({"caption_present", "role_unknown", "filter_uncertain", "lighting_uncertain", "preferences_missing"})
 SKIP = "skip"
 FACE = "face"
 
@@ -136,8 +137,11 @@ def check_status(report: Dict, images: Dict) -> None:
     if not any(usable(i) and i["role"] in {USER_PHOTO, UNKNOWN} for i in images.values()):
         raise ContractError("Personal recommendations need a usable user/unknown photo")
     if report["status"] == READY:
-        if not any(usable(i) and i["role"] == USER_PHOTO for i in images.values()):
+        ready_images = [i for i in images.values() if usable(i) and i["role"] == USER_PHOTO]
+        if not ready_images:
             raise ContractError("ready needs a usable user-declared photo")
+        if any(READY_BLOCKING_ISSUES.intersection(i["issues"]) for i in ready_images):
+            raise ContractError("ready cannot contain unresolved photo or preference issues")
 
 
 def check_recommendations(report: Dict, catalog: Catalog, observations: Dict) -> None:

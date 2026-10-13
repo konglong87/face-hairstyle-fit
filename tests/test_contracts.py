@@ -76,6 +76,19 @@ class ContractTests(unittest.TestCase):
         self.report["status"] = "ready"
         self.reject(self.report)
 
+    def test_clean_user_photo_can_be_ready(self):
+        self.report["status"] = "ready"
+        self.report["images"][0].update(role="user_photo", issues=[])
+        validate_report(self.report, self.catalog)
+
+    def test_uncertain_user_photo_cannot_be_ready(self):
+        for issue in ["caption_present", "role_unknown", "filter_uncertain", "lighting_uncertain", "preferences_missing"]:
+            with self.subTest(issue=issue):
+                report = deepcopy(self.report)
+                report["status"] = "ready"
+                report["images"][0].update(role="user_photo", issues=[issue])
+                self.reject(report)
+
     def test_effect_only_cannot_be_personal_recommendation(self):
         self.report["images"][0]["role"] = "expected_effect"
         self.reject(self.report)
