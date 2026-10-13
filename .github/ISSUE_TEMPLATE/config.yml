@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "使用疑问与风格讨论 / Discussions"
+    url: "https://github.com/konglong87/face-hairstyle-fit/discussions"
+    about: "只分享脱敏文字，不上传真实照片、个人报告或凭据。"
+  - name: "安全与隐私策略 / Security policy"
+    url: "https://github.com/konglong87/face-hairstyle-fit/blob/main/SECURITY.md"
+    about: "安全问题请先阅读报告通道说明，不在公开 Issue 披露敏感细节。"

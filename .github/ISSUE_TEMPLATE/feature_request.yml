@@ -1,0 +1,49 @@
+name: "Feature / style proposal / 功能与风格提案"
+description: "提出风格配方或功能改进，并说明用途、层级和限制。"
+title: "[Proposal] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提案，请不要提供真实照片或个人分析报告。
+        风格是造型表达，不是人的年龄、身份、性格或颜值分类。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: "隐私确认"
+      options:
+        - label: "本提案不包含真人照片、可识别个体信息或有效凭据。"
+          required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: "提案类型"
+      options:
+        - "基础风格 family"
+        - "表达方向 expression"
+        - "组合配方 recipe"
+        - "工作流 / 校验 / 文档"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "用户问题和场景"
+      description: "当前方案缺少什么？为什么值得增加？"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "建议方案"
+      description: "风格提案请包含定义、维度锚点、发型/妆容/穿搭三模块；勿声称未验证的准确率。"
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: "取舍、未知项与验证方式"
+      description: "说明适用范围、维护成本，以及如何用合成数据和授权反馈验证。"
+    validations:
+      required: true

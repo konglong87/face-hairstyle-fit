@@ -1,0 +1,45 @@
+name: "Bug report / 问题反馈"
+description: "使用合成输入报告代码、校验或文档问题；不要上传真人照片和凭据。"
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先阅读 CONTRIBUTING.md 和 SECURITY.md。
+        **不要提交真人照片、个人报告、密钥、Token、Cookie、私钥或账号截图。**
+        安全漏洞请按 SECURITY.md 寻求私密通道，不要在此公开复现细节。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: "隐私确认"
+      options:
+        - label: "我将仅提供合成/脱敏数据，不含真人照片、身份信息或有效凭据。"
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: "版本 / Commit"
+      description: "例如 commit 短 SHA，以及 Python 版本（如涉及 CLI）。"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "最小复现步骤"
+      description: "填写执行命令和合成 JSON，不要粘贴真实咨询报告或环境凭据。"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "预期结果"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "实际结果"
+      description: "错误日志请删除用户名、绝对路径、账号和凭据后再填写。"
+    validations:
+      required: true

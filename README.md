@@ -42,6 +42,7 @@
 - [Quick start](#quick-start)
 - [Project structure](#project-structure)
 - [Roadmap](#roadmap)
+- [Community and support](#community-and-support)
 
 ## What it does
 
@@ -235,6 +236,20 @@ CLI 只负责 catalog/report 契约校验和静态 HTML 展示：
 - [ ] 人脸识别
 - [ ] 医疗诊断
 - [ ] 自动上传用户照片
+
+## Community and support
+
+| 入口 | 用途 |
+|---|---|
+| [Discussions](https://github.com/konglong87/face-hairstyle-fit/discussions) | 使用疑问与风格模型讨论（仅脱敏文字） |
+| [Issues](https://github.com/konglong87/face-hairstyle-fit/issues/new/choose) | Bug 与功能/风格提案 |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | 贡献流程与验证清单 |
+| [SUPPORT.md](SUPPORT.md) | 使用支持与反馈方式 |
+| [SECURITY.md](SECURITY.md) | 安全与隐私报告流程 |
+| [CHANGELOG.md](CHANGELOG.md) | 版本能力与限制 |
+
+> [!CAUTION]
+> 请不要在 Issue、Discussion 或 PR 中上传真人照片、个人分析报告或有效凭据。
 
 ## Documentation
 
