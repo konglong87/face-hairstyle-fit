@@ -82,7 +82,14 @@ class ContractTests(unittest.TestCase):
         validate_report(self.report, self.catalog)
 
     def test_uncertain_user_photo_cannot_be_ready(self):
-        for issue in ["caption_present", "role_unknown", "filter_uncertain", "lighting_uncertain", "preferences_missing"]:
+        issues = [
+            "caption_present",
+            "role_unknown",
+            "filter_uncertain",
+            "lighting_uncertain",
+            "preferences_missing",
+        ]
+        for issue in issues:
             with self.subTest(issue=issue):
                 report = deepcopy(self.report)
                 report["status"] = "ready"

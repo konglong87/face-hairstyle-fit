@@ -18,7 +18,13 @@ USER_PHOTO = "user_photo"
 UNKNOWN = "unknown"
 REFERENCE_ROLES = frozenset({"reference", "expected_effect"})
 BLOCKING_ISSUES = frozenset({"blur", "occluded", "extreme_pose", "no_face"})
-READY_BLOCKING_ISSUES = frozenset({"caption_present", "role_unknown", "filter_uncertain", "lighting_uncertain", "preferences_missing"})
+READY_BLOCKING_ISSUES = frozenset({
+    "caption_present",
+    "role_unknown",
+    "filter_uncertain",
+    "lighting_uncertain",
+    "preferences_missing",
+})
 SKIP = "skip"
 FACE = "face"
 
