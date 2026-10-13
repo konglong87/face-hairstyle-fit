@@ -251,13 +251,6 @@ CLI 只负责 catalog/report 契约校验和静态 HTML 展示：
 > [!CAUTION]
 > 请不要在 Issue、Discussion 或 PR 中上传真人照片、个人分析报告或有效凭据。
 
-## Documentation
-
-- [`docs/architecture.md`](docs/architecture.md)：架构和实施方案
-- [`docs/plan-review.md`](docs/plan-review.md)：方案 review
-- [`docs/qa-2026-10-13.md`](docs/qa-2026-10-13.md)：三图回放验收记录
-- [`references/output.md`](references/output.md)：结构化输出和本地展示说明
-
 ## License
 
 MIT License，见 [`LICENSE`](LICENSE)。
